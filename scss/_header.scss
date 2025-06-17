@@ -1,0 +1,43 @@
+/* Estilos para el header */
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 0;
+    background-image: linear-gradient(90deg, #e7c4e7, #e41b1b);
+}
+
+.titulo {
+    color: #000000; 
+    font-size: 2.5em; 
+    text-decoration: none; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+/* Estilo para el contenedor de la barra de navegación */
+.navh2 {
+    padding: 10px;
+    margin: 0;
+    color: #000000; 
+    font-size: 2.5em; 
+    text-decoration: none; 
+    font-family: Arial, Helvetica, sans-serif;
+    border-style: solid;
+}
+
+
+
+.nav-link-active {
+    display: flex;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    padding: 0%;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+    display: block;
+
+}
+

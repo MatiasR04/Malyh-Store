@@ -1,0 +1,231 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos para el header */
+.bg-body-tertiary {
+  --bs-bg-opacity: 0;
+  background-image: linear-gradient(90deg, #e7c4e7, #e41b1b);
+}
+
+.titulo {
+  color: #000000;
+  font-size: 2.5em;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+/* Estilo para el contenedor de la barra de navegación */
+.navh2 {
+  padding: 10px;
+  margin: 0;
+  color: #000000;
+  font-size: 2.5em;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  border-style: solid;
+}
+
+.nav-link-active {
+  display: flex;
+  flex-direction: row;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  padding: 0%;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 0 15px;
+  display: block;
+}
+
+.maincontent {
+  height: 100vh;
+  display: block;
+  justify-content: center;
+  background-image: url("https://www.wallmur.com/media/catalog/product/cache/af07dfdb28b408d54fee9501edc13278/1/8/18734056_crop.jpg");
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 20px;
+  margin: 0;
+}
+
+.maincontent h2 {
+  text-align: center;
+}
+
+.textoinicio {
+  color: #ecc5ec;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.9em;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: overline underline;
+}
+
+.texto-superior {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: absolute;
+  border-style: solid;
+  top: 5px;
+  left: 50%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgb(255, 255, 255);
+  padding: 0px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+.carouselslide-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+
+.carousel {
+  width: 33.3%;
+  padding: 50px;
+  margin: 0px;
+  object-fit: cover;
+}
+
+.textos {
+  color: #000000;
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+/*contacto*/
+.contactocontent {
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/*contacto*/
+/*Tienda*/
+.articulos {
+  flex-direction: row;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  margin: 0px;
+}
+
+/*Tienda*/
+.art {
+  display: flex;
+  justify-content: space-around;
+}
+
+.art img {
+  border-radius: 20px;
+  border-color: #000000;
+  border-style: solid;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  width: 100%;
+  height: 550px;
+}
+
+.portadas {
+  text-align: center;
+  width: 1000px;
+  height: 600px;
+  margin: 10px;
+  display: inline;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.imagenes {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para la galería de imágenes */
+.galeria {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Estilos para la galería de imágenes */
+.logowpp {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  display: inline-block;
+  margin-right: auto;
+  position: fixed;
+  bottom: 0%;
+  right: 0px;
+}
+
+/* Estilos para el contenido de Qsomos */
+.qsomoscontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Estilos de redes sociales*/
+.redes {
+  width: 45px;
+  height: 45px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 40%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*Estilos de redes sociales*/
+/* Estilos para el footer */
+footer {
+  background-image: linear-gradient(90deg, #e7c4e7, #f7f7f7);
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos para el footer */
+.bigger:hover {
+  animation: bigger 2s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bigger {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

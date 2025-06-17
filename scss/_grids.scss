@@ -1,0 +1,71 @@
+/*------GRID CONTAINER-------*/
+/*---GRID INICIO---*/
+
+#container_principal_grid
+{
+    @include grid(1fr 1fr, 0.4fr 4fr 4fr 0.1fr);
+    grid-template-areas: 
+            "headerprincipal headerprincipal"
+            "main   main"
+            "main   main"
+            "footer footer"
+    ;
+}
+.cabecera_principal
+{
+    grid-area: headerprincipal;
+}
+.contenido_principal
+{
+    grid-area: main;
+}
+.pie_principal
+{
+    grid-area: footer;
+}
+/*---GRID Tienda---*/
+#container_tienda_grid
+{
+    @include grid(1fr 0.5fr 1fr, 0.3fr 4fr 0.1fr);
+    grid-template-areas: 
+            "header_tienda header_tienda header_tienda"
+            "main_tienda   main_tienda   main_tienda"
+            "footer_tienda footer_tienda footer_tienda"
+    ;
+    align-content: map-get($estilos , spaceado-bet );
+}
+.cabecera_tienda
+{
+    grid-area: header_tienda;
+}
+.contenido_tienda
+{
+    grid-area: main_tienda;
+}
+.pie_tienda
+{
+    grid-area: footer_tienda;
+}
+/*---GRID qsomos---*/
+#container_nosotros_grid
+{
+@include grid(auto, 0.2fr 2fr 1fr 0.1fr);
+grid-template-areas: 
+            "header_nosotros header_nosotros header_nosotros"
+            "main_nosotros main_nosotros main_nosotros"
+            "main_nosotros main_nosotros main_nosotros" 
+            "footer_nosotros footer_nosotros footer_nosotros"
+;
+}
+.cabecera_nosotros
+{
+    grid-area: header_nosotros;
+}
+.contenido_nosotros
+{
+    grid-area: main_nosotros;
+}
+.pie_nosotros
+{
+    grid-area: footer_nosotros;
+}
