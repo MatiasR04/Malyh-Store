@@ -8,7 +8,7 @@
 /* Estilos para el header */
 .bg-body-tertiary {
   --bs-bg-opacity: 0;
-  background-image: linear-gradient(90deg, #e7c4e7, #e41b1b);
+  background-image: linear-gradient(90deg, #e7c4e7, #f7f7f7);
 }
 
 .titulo {
@@ -73,7 +73,7 @@
   border-style: solid;
   top: 5px;
   left: 50%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #e7c4e7;
   color: rgb(255, 255, 255);
   padding: 0px;
   border-radius: 5px;
@@ -140,9 +140,8 @@ form {
 
 .art img {
   border-radius: 20px;
-  border-color: #000000;
+  border-color: #e7c4e7;
   border-style: solid;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
   width: 100%;
   height: 550px;
 }
