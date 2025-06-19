@@ -133,12 +133,15 @@ form {
 /* Estilos para la galería de imágenes */
 .galeria {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 20%;
+    gap: 100px;
 }
+
+
 /* Estilos para la galería de imágenes */
 
 .logowpp {

@@ -168,11 +168,12 @@ form {
 /* Estilos para la galería de imágenes */
 .galeria {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 20%;
+  gap: 100px;
 }
 
 /* Estilos para la galería de imágenes */
@@ -284,5 +285,39 @@ footer {
 }
 
 /*RESPONSIVE TIENDA TELEFONO*/
+/*RESPONSIVE GALERIA TABLET*/
+@media (max-width: 768px) {
+  .galeria {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .galeria img {
+    width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 10%;
+  }
+}
+/*RESPONSIVE GALERIA TABLET*/
+/*RESPONSIVE GALERIA TELEFONO*/
+@media (max-width: 400px) {
+  .galeria {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+  }
+  .galeria img {
+    width: 75%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+/*RESPONSIVE GALERIA TELEFONO*/
 
 /*# sourceMappingURL=styles.css.map */

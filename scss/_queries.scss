@@ -63,3 +63,44 @@
     height: auto; 
 }
 /*RESPONSIVE TIENDA TELEFONO*/
+
+/*RESPONSIVE GALERIA TABLET*/
+@media (max-width: 768px) {
+    .galeria {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    }
+    .galeria img {
+        width: 50%;
+        height: auto; 
+        margin-bottom: 20px; 
+        margin-top: 10%;
+    }
+}
+
+/*RESPONSIVE GALERIA TABLET*/
+
+/*RESPONSIVE GALERIA TELEFONO*/
+
+@media (max-width: 400px) {
+    .galeria {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+    }
+    
+    .galeria img {
+        width: 75%;
+        height: auto; 
+        margin-bottom: 20px; 
+    }
+}
+
+
+/*RESPONSIVE GALERIA TELEFONO*/
