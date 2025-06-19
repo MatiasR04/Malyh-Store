@@ -23,20 +23,18 @@
 .navh2 {
   padding: 10px;
   margin: 0;
-  color: #000000;
+  color: #ffffff;
   font-size: 2.5em;
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   border-style: solid;
 }
 
-.nav-link-active {
-  display: flex;
-  flex-direction: row;
-  font-family: Arial, Helvetica, sans-serif;
-  justify-content: center;
-  padding: 0%;
-  margin: 0;
+.nav-link {
+  color: #000000;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  border-style: solid;
 }
 
 .navbar li {
@@ -45,12 +43,11 @@
 }
 
 .maincontent {
-  height: 100vh;
   display: block;
   justify-content: center;
   background-image: url("https://www.wallmur.com/media/catalog/product/cache/af07dfdb28b408d54fee9501edc13278/1/8/18734056_crop.jpg");
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  padding: 20px;
+  padding: 25px;
   margin: 0;
 }
 
@@ -71,9 +68,9 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   position: absolute;
   border-style: solid;
-  top: 5px;
+  top: -30px;
   left: 50%;
-  background-color: #e7c4e7;
+  background-color: #f1e0f1;
   color: rgb(255, 255, 255);
   padding: 0px;
   border-radius: 5px;
@@ -87,7 +84,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 50%;
+  margin-bottom: 200px;
 }
 
 .carousel {
@@ -138,12 +135,16 @@ form {
   justify-content: space-around;
 }
 
+.articulostienda {
+  margin-bottom: 40px;
+}
+
 .art img {
   border-radius: 20px;
-  border-color: #e7c4e7;
+  border-color: #f1e0f1;
   border-style: solid;
   width: 100%;
-  height: 550px;
+  height: auto;
 }
 
 .portadas {
@@ -194,6 +195,10 @@ form {
   align-items: center;
 }
 
+.qsomosimg {
+  width: 100%;
+}
+
 /*Estilos de redes sociales*/
 .redes {
   width: 45px;
@@ -226,5 +231,58 @@ footer {
     transform: scale(1.5);
   }
 }
+/*RESPONSIVE PAGINA PRINCIPAL TABLET*/
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .carousel {
+    width: 80%;
+    padding: 20px;
+  }
+}
+/*RESPONSIVE PAGINA PRINCIPAL TABLET*/
+/*RESPONSIVE PAGINA PRINCIPAL TELEFONO*/
+@media (max-width: 400px) {
+  .titulo {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .carousel {
+    width: 100%;
+    padding: 20px;
+  }
+}
+/*RESPONSIVE PAGINA PRINCIPAL TELEFONO*/
+/*RESPONSIVE TIENDA TABLET*/
+@media (max-width: 768px) {
+  .art {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    grid-gap: 50px;
+  }
+}
+/*RESPONSIVE TIENDA TABLET*/
+/*RESPONSIVE TIENDA TELEFONO*/
+@media (max-width: 400px) {
+  .articulostienda {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .art img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+}
+.carousel {
+  height: auto;
+}
+
+/*RESPONSIVE TIENDA TELEFONO*/
 
 /*# sourceMappingURL=styles.css.map */

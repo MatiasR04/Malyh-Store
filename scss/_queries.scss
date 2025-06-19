@@ -1,0 +1,65 @@
+/*RESPONSIVE PAGINA PRINCIPAL TABLET*/
+
+@media (max-width: 768px) {
+.titulo {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.carousel {
+    width: 80%;
+    padding: 20px;
+}
+    }
+
+/*RESPONSIVE PAGINA PRINCIPAL TABLET*/
+
+/*RESPONSIVE PAGINA PRINCIPAL TELEFONO*/
+@media (max-width: 400px) {
+.titulo {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.carousel {
+    width: 100%;
+    padding: 20px;
+}
+    }
+/*RESPONSIVE PAGINA PRINCIPAL TELEFONO*/
+
+/*RESPONSIVE TIENDA TABLET*/
+@media (max-width: 768px) {
+
+    .art {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        grid-gap: 50px;
+    }
+}
+
+
+/*RESPONSIVE TIENDA TABLET*/
+
+/*RESPONSIVE TIENDA TELEFONO*/
+
+@media (max-width: 400px) {
+.articulostienda {
+    width: 90%;
+    margin: 0 auto; 
+}
+
+.art img {
+    width: 100%;  
+    height: auto; 
+    display: block; 
+    object-fit: cover;
+}
+}
+
+.carousel {
+    height: auto; 
+}
+/*RESPONSIVE TIENDA TELEFONO*/
